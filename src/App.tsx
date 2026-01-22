@@ -1,3 +1,12 @@
+const menu = [
+  {title:"Maison",link:"#"},
+  {title:"About",link:"#"},
+  {title:"Services",link:"#"},
+  {title:"Contact",link:"#"},
+]
+
+
+
 function App() {
   return (
     <body>
@@ -22,7 +31,8 @@ function App() {
            
 
             <ul className="md:flex items-center gap-4 hidden  mr-8">
-              <li>
+              {menu.map((menuItem, index) => (<li key={index}><a href={menuItem.link} className="text-white hover:text-yellow-300">{menuItem.title}</a></li>))}
+              {/* <li>
                 <a href="#" className="text-white hover:text-yellow-300">
                   Maison
                 </a>
@@ -41,7 +51,7 @@ function App() {
                 <a href="#" className="text-white hover:text-yellow-300">
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
 
             {/* <!-- Section 1 --> */}
