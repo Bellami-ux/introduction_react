@@ -11,7 +11,7 @@
   {title:"Maison",link:"#"},
   {title:"About",link:"#"},
   {title:"Services",link:"#"},
-  {title:"Contact",link:"#"},
+  {title:"CoLQYIJKNQCLQntact",link:"#"},
 ];
 
 export const bella =[
